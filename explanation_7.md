@@ -8,7 +8,7 @@ Get Time Taken to run using : time python <filename>
 
 - How i solved this problem ?
 
-This problem requires that i traverse through a list and update the max and min variables, solution uses the 0(n) complexity to retrieve the max and min values
+This problem requires i use the trie data structure method to add routes, handlers and be able to look them up.
 
 - TASK 7 : 0(n)
 
