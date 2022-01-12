@@ -11,7 +11,8 @@ Get Time Taken to run using : time python <filename>
 
 
 - Design choices -
-  - This problem requires the Trie datastructure to search for list of words in a tree filtered by character(s) prefix, solution uses the 0(n) complexity to sort the list while loop and ensuring it runs from 0 to n where n is the length of input list and return a list the list after breaking out of the while loop
+  - This problem i used the Trie data structure to search for list of words in a tree filtered by character(s) prefix, solution uses the 0(n) complexity to sort the list while loop and ensuring it runs from 0 to n where n is the length of input list and return a list, after breaking out of the while loop
+
 - TASK 5 : 0(n)
 
   - Space complexity analysis-

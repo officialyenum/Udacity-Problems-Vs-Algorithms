@@ -12,7 +12,7 @@ Get Time Taken to run using : time python <filename>
 
 
 - Design choices -
-  - This problem requires that i traverse through a list and update the max and min variables, solution uses the 0(n) complexity to retrieve the max and min values
+  - This problem requires that i traverse through a list using the linear search algorithm and update the max and min variables, solution uses the 0(n) complexity to retrieve the max and min values
 
 - TASK 6 : 0(n)
 
