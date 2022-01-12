@@ -6,14 +6,13 @@ Run time analysis (Worst Case Big-O Notation) of solution
 
 Get Time Taken to run using : time python <filename>
 
-- How i solved this problem ?
+- Design choices -
 
-This problem requires i use the trie data structure method to add routes, handlers and be able to look them up.
+  - This problem requires i use the trie data structure method to add routes, handlers and be able to look them up.
 
 - TASK 7 : 0(n)
 
-  - Space Complexities
-
+  - Space complexity analysis-
     - RouteTrie
       - root = 0(1)
     - RouteTrieNode
@@ -23,6 +22,7 @@ This problem requires i use the trie data structure method to add routes, handle
       - route_trie = 0(1) ref(RouteTrie-root)
       - self.route_trie.root.handler = 0(1) ref (RouteTrieNode-handler)
 
+  - Logic explanation - Time complexity analysis-
   - Algorithm for Router :
 
     - add handler : get routes and insert routes to route trie node 0(1)

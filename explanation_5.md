@@ -9,13 +9,12 @@ Run time analysis (Worst Case Big-O Notation) of solution
 
 Get Time Taken to run using : time python <filename>
 
-- How i solved this problem ?
 
-This problem requires the Trie datastructure to search for list of words in a tree filtered by character(s) prefix, solution uses the 0(n) complexity to sort the list while loop and ensuring it runs from 0 to n where n is the length of input list and return a list the list after breaking out of the while loop
+- Design choices -
+  - This problem requires the Trie datastructure to search for list of words in a tree filtered by character(s) prefix, solution uses the 0(n) complexity to sort the list while loop and ensuring it runs from 0 to n where n is the length of input list and return a list the list after breaking out of the while loop
 - TASK 5 : 0(n)
 
-  - Space Complexities
-
+  - Space complexity analysis-
     - is_word = 0(1)
     - children = 0(n)
     - root = 0(1)
@@ -26,6 +25,7 @@ This problem requires the Trie datastructure to search for list of words in a tr
         - temp_word = 0(1)
         - key_length = 0(1)
 
+  - Logic explanation - Time complexity analysis-
   - Algorithm for Autocomplete with Tries algorithm :
     - create TrieNode class with is_word and children dictionary 
 
