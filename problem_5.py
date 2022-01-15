@@ -31,20 +31,19 @@ class Trie:
         
         current_node.is_word = True
     
+    # def find(self, prefix):
+    #     ## Find the Trie node that represents this prefix
+    #     """
+    #     Check if word exists in trie
+    #     """
+    #     current_node = self.root
 
-    def find(self, prefix):
-        ## Find the Trie node that represents this prefix
-        """
-        Check if word exists in trie
-        """
-        current_node = self.root
-
-        for char in prefix:
-            print(current_node.children.get(char))
-            if char not in current_node.children:
-                return False
-            current_node = current_node.children[char]
-        return current_node.is_word
+    #     for char in prefix:
+    #         print(current_node.children.get(char))
+    #         if char not in current_node.children:
+    #             return False
+    #         current_node = current_node.children[char]
+    #     return current_node.is_word
 
     def appendWordRecursion(self, node, word, key_length):
         

@@ -12,25 +12,32 @@ Get Time Taken to run using : time python <filename>
 
 - TASK 5 : 0(n)
 
-  - Space complexity analysis-
-    - insertWord = 0(1)
-    - getSuffixList = 0(1)
-
-  - Logic explanation - Time complexity analysis-
+  - Logic explanation - Time complexity analysis - Space complexity analysis -
 
   - Algorithm for Autocomplete with Tries algorithm :
 
-    - create TrieNode class with is_word and children dictionary
+    - create TrieNode class with is_word bool and children dictionary
 
-    - create Trie class with 
-        root,
-        word list,
-        insert function : 0(n),
-        appendWordRecursion function : 0(n)
-        getSuffixList function : 0 (1)
-    - return suffix List 0(1)
-  
-  - Modular Algorithm :
-    - Create Trie = 0(1)
-    - Insert word in Trie = 0(n)
-    - get suffix list = 0(1)
+    - create Trie class with
+      - root,
+      - word list,
+      - insert function,
+      - appendWordRecursion function,
+      - getSuffixList function,
+
+  - Modular Algorithm for Trie class:
+
+    - Insert word in Trie class
+
+      - Space : 0(n) where n is the length of the string to be inserted since we need to perform n iterations.
+
+      - Time : 0(n) where n is the length of the word since n new nodes are added which takes up space O(n).
+
+    - append Word Trie class
+
+      - Space : 0(n) maximum depth of trie is proportional to n,
+      - Time : 0(n) traverse deep into the trie tree and append word to word list where is_word is true
+
+    - get suffix list Trie class
+      - Space : 0(1)
+      - Time : 0(n) In this case, the time complexity will be O(n) where n is the length of the key/word to be searched.

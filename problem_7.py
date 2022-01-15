@@ -74,7 +74,6 @@ class Router:
         routes = self.split_path(route)
         #  pass the pass parts as a list to the RouteTrie
         self.route_trie.insert(routes , handler)
-        pass
 
     def lookup(self, route):
         # lookup path (by parts) and return the associated handler

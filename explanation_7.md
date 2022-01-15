@@ -12,35 +12,36 @@ Get Time Taken to run using : time python <filename>
 
 - TASK 7 : 0(n)
 
-  - Space complexity analysis-
-
-    - RouteTrie
-      - root = 0(1)
-    - RouteTrieNode
-      - handler = 0(1)
-      - children = 0(n)
-    - Router
-      - route_trie = 0(1) ref(RouteTrie-root)
-      - self.route_trie.root.handler = 0(1) ref (RouteTrieNode-handler)
-
-  - Logic explanation - Time complexity analysis-
+  - Logic explanation - Time complexity analysis - Space complexity analysis -
   - Algorithm for Router :
 
-    - add handler : get routes and insert routes to route trie node 0(1)
-    - lookup : split path to return found routes list and find handler in route trie nodes children 0(1)
-    - split path : split paths 0(1), traverse routes list and remove empty elements 0(n), then return routes list
+    - add handler in RouteTrie class:
+
+      - Space : 0(1)
+      - Time : 0(1) - get routes and insert routes to route trie node 0(1)
+
+    - lookup in RouteTrie class :
+
+      - Space : 0(1)
+      - Time : 0(1) - split path to return found routes list and find handler in route trie nodes children 0(1)
+
+    - split path in RouteTrie class :
+      - Space : 0(1)
+      - Time : 0(n) - split paths 0(1), traverse routes list and remove empty elements 0(n), then return routes list
 
   - Algorithm for RouteTrie :
 
-    - insert : 0(1)
-    - insertRec : 0(n)
-    - find : traverse through routes to return handler 0(n)
+    - insert in RouteTrie class
+      - Space : 0(1)
+      - Time : 0(1) insert routes and handler
+    - insertRec in RouteTrie class
+      - Space : 0(n) where n is the length of the routes to be inserted since we need to perform n recursive traversal.
+      - Time : 0(n) recursively insert route into children
+    - find in RouteTrie class
+      - Space : 0(1)
+      - Time : 0(n) traverse through routes to return handler 0(n)
 
   - Algorithm for RouteTrieNode :
-
-    - insert : insert node to the current children route 0(1)
-
-  - Modular Algorithm :
-    - Create Router = 0(1)
-    - add Handler = 0(1)
-    - look up = 0(1)
+    - Insert in RouteTrieNode class
+      - Space : 0(1)
+      - Time : 0(1) insert in children dictionary using route as key and handler as value
