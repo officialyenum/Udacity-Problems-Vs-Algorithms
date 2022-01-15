@@ -93,7 +93,7 @@ class Router:
         for ele in routes:
             if ele == '':
                 routes.remove(ele)
-        # both the add_handler and loopup functions,
+        # both the add_handler and lookup functions,
         # so it should be placed in a function here
         return routes
 

@@ -13,6 +13,7 @@ Get Time Taken to run using : time python <filename>
 - TASK 7 : 0(n)
 
   - Space complexity analysis-
+
     - RouteTrie
       - root = 0(1)
     - RouteTrieNode
@@ -36,4 +37,10 @@ Get Time Taken to run using : time python <filename>
     - find : traverse through routes to return handler 0(n)
 
   - Algorithm for RouteTrieNode :
+
     - insert : insert node to the current children route 0(1)
+
+  - Modular Algorithm :
+    - Create Router = 0(1)
+    - add Handler = 0(1)
+    - look up = 0(1)

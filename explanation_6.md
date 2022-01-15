@@ -17,9 +17,7 @@ Get Time Taken to run using : time python <filename>
 - TASK 6 : 0(n)
 
   - Space complexity analysis-
-    - min_value = 0(1)
-    - max_value = 0(1)
-    - ints = 0(n)
+    - get_min_max = 0(1)
 
   - Logic explanation - Time complexity analysis-
   - Algorithm for Get Min Max :

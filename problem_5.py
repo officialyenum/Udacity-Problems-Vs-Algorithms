@@ -26,8 +26,8 @@ class Trie:
                 
             current_node = current_node.children[char]
 
-        for a,n in current_node.children.items():
-            current_node.setSuffix(current_node.suffix(a))
+        # for a,n in current_node.children.items():
+        #     current_node.setSuffix(current_node.suffix(a))
         
         current_node.is_word = True
     
