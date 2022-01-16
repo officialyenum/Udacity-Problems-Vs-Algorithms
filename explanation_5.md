@@ -34,15 +34,18 @@ Get Time Taken to run using : time python <filename>
   - Modular Algorithm for Trie class:
 
     - _init_ method in Trie class
+
       - Space : 0(1)
       - Time : 0(1)
 
     - Insert method in Trie class
+
       - Space : 0(n) where n is the length of the string to be inserted since we need to perform n iterations.
       - Time : 0(n) where n is the length of the word since n new nodes are added which takes up space O(n).
 
     - append Word Recursion method in Trie class
-      - Space : 0(1) 
+
+      - Space : 0(n) 
       - Time : 0(n) traverse deep into the trie tree and append word to word list where is_word is true
 
     - get suffix list method in Trie class
