@@ -113,10 +113,6 @@ print(router.lookup("/home/about")) # should print 'about handler'
 print(router.lookup("/home/about/")) # should print 'about handler' or None if you did not handle trailing slashes
 print(router.lookup("/home/about/me")) # should print 'not found handler' or None if you did not implement one
 
-# create the router and add a route
-router = Router("root handler") # remove the 'not found handler' if you did not implement this
-router.add_handler("/", "about handler")  # add a route
-
 
 # Test Case 2
 print('-----Test Case 2-----')

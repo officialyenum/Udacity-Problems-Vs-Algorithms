@@ -25,19 +25,26 @@ Get Time Taken to run using : time python <filename>
       - appendWordRecursion function,
       - getSuffixList function,
 
+  - Modular Complexity for Trie Node class:
+
+    - _init_ method
+      - Space : 0(1)
+      - Time : 0(1)
+
   - Modular Algorithm for Trie class:
 
-    - Insert word in Trie class
+    - _init_ method in Trie class
+      - Space : 0(1)
+      - Time : 0(1)
 
+    - Insert method in Trie class
       - Space : 0(n) where n is the length of the string to be inserted since we need to perform n iterations.
-
       - Time : 0(n) where n is the length of the word since n new nodes are added which takes up space O(n).
 
-    - append Word Trie class
-
-      - Space : 0(n) maximum depth of trie is proportional to n,
+    - append Word Recursion method in Trie class
+      - Space : 0(1) 
       - Time : 0(n) traverse deep into the trie tree and append word to word list where is_word is true
 
-    - get suffix list Trie class
+    - get suffix list method in Trie class
       - Space : 0(1)
       - Time : 0(n) In this case, the time complexity will be O(n) where n is the length of the key/word to be searched.

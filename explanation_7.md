@@ -15,29 +15,40 @@ Get Time Taken to run using : time python <filename>
   - Logic explanation - Time complexity analysis - Space complexity analysis -
   - Algorithm for Router :
 
-    - add handler in RouteTrie class:
+    - _init_ method in Router class
+
+      - Space : 0(1)
+      - Time : 0(1)
+
+    - add handler method in Router class:
 
       - Space : 0(1)
       - Time : 0(1) - get routes and insert routes to route trie node 0(1)
 
-    - lookup in RouteTrie class :
+    - lookup in method Router class :
 
       - Space : 0(1)
       - Time : 0(1) - split path to return found routes list and find handler in route trie nodes children 0(1)
 
-    - split path in RouteTrie class :
+    - split path method in Router class :
       - Space : 0(1)
       - Time : 0(n) - split paths 0(1), traverse routes list and remove empty elements 0(n), then return routes list
 
   - Algorithm for RouteTrie :
 
-    - insert in RouteTrie class
+    - _init_ method in RouteTrie class
+      - Space : 0(1)
+      - Time : 0(1)
+
+    - insert in method RouteTrie class
+
       - Space : 0(1)
       - Time : 0(1) insert routes and handler
-    - insertRec in RouteTrie class
+
+    - insertRec in method RouteTrie class
       - Space : 0(n) where n is the length of the routes to be inserted since we need to perform n recursive traversal.
       - Time : 0(n) recursively insert route into children
-    - find in RouteTrie class
+    - find method in RouteTrie class
       - Space : 0(1)
       - Time : 0(n) traverse through routes to return handler 0(n)
 
