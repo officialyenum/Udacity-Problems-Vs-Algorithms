@@ -53,6 +53,10 @@ Get Time Taken to run using : time python <filename>
       - Time : 0(n) traverse through routes to return handler 0(n)
 
   - Algorithm for RouteTrieNode :
+    - _init_ method in RouteTrie class
+      - Space : 0(1)
+      - Time : 0(1)
+
     - Insert in RouteTrieNode class
       - Space : 0(1)
       - Time : 0(1) insert in children dictionary using route as key and handler as value
